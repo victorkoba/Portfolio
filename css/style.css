@@ -182,12 +182,15 @@ span {
 }
 
 .project-card {
+    display: block;
     background: #fff;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.05);
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
 }
 
 .project-card:hover {
@@ -197,16 +200,6 @@ span {
 
 .project-card h3 {
     margin-bottom: 10px;
-}
-
-.project-card a {
-    text-decoration: none;
-    color: #28353b;
-    font-size: 20px;
-    transition: color 0.3s;
-}
-
-.project-card a:hover {
     color: #445964;
 }
 
@@ -216,6 +209,7 @@ span {
 }
 
 .about {
+    height: 100%;
     padding: 80px 60px;
     background: #fff;
 }
@@ -231,6 +225,7 @@ span {
     opacity: 0;
     transform: translateY(30px);
     transition: all 1s ease;
+    margin-top: 100px;
 }
 
 .about-text.visible {
@@ -249,7 +244,6 @@ span {
     color: #445964;
     margin-bottom: 15px;
     line-height: 1.6;
-
 }
 
 /* === Mobile - até 480px === */
